@@ -70,15 +70,23 @@ table {
     grid-row: 1 / -1;
 
     display: grid;
-
+    grid-template-rows: 1fr 8fr;
 }
 
 .navigation {
     display: grid;
+    align-content: start;
 }
 
 .sidebar-item {
-    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sidebar-img {
+    background-color: blue;
+    height: 2em;
+    width: 2em;
 }
 
 /* !~~~~~~~ HEADER ~~~~~~~~! */
