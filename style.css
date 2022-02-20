@@ -53,15 +53,21 @@ table {
 
 
 .app {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 15vh 85vh;
 }
 
 /* !~~~~~~~ SIDEBAR ~~~~~~~! */
+.sidebar {
+    background-color: paleturquoise;
+}
+
 
 .sidebar {
     grid-column: 1 / 2;
+    grid-row: 1 / -1;
 
     display: grid;
 
@@ -104,6 +110,5 @@ table {
 
 .main {
     background-color: aquamarine;
-    height: 600px;
     grid-column: 2 / -1;
 }
