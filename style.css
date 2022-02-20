@@ -61,9 +61,20 @@ table {
 
 /* !~~~~~~~ SIDEBAR ~~~~~~~! */
 .sidebar {
-    background-color: paleturquoise;
+    background-color: #afeeee;
 }
 
+.logo-image {
+    height: 3em;
+    width: 3em;
+    background-color: pink;
+    border: none;
+}
+
+.logo-text {
+    font-weight: bolder;
+    font-size: 2em;
+}
 
 .sidebar {
     grid-column: 1 / 2;
@@ -80,13 +91,20 @@ table {
 
 .sidebar-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+    align-items: center;
+    column-gap: 1em;
 }
 
 .sidebar-img {
     background-color: blue;
     height: 2em;
     width: 2em;
+}
+
+.sidebar-text {
+    justify-self: start;
 }
 
 /* !~~~~~~~ HEADER ~~~~~~~~! */
@@ -104,6 +122,12 @@ table {
 
 .searchbar {
     grid-column: 1 / -1;
+
+    display: grid;
+}
+
+.search-left {
+    display: flex;
 }
 
 .userinfo {
