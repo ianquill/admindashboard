@@ -133,25 +133,43 @@ table {
 }
 
 .searchbar {
-    background-color: red;
+    background-color: white;
 }
 
 .searchbar {
     grid-column: 1 / -1;
 
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .search-left {
     display: flex;
 }
 
+.search-icon {
+    height: 2em;
+    width: 2em;
+}
+
+.search-input {
+    height: min-content;
+    border-radius: 2em;
+    border: none;
+    background-color: var(--palette-offwhite1);
+}
+
+.profile-small {
+    height: 3em;
+    width: 3em;
+}
+
 .userinfo {
-    background-color: purple;
+    background-color: white;
 }
 
 .header .buttons {
-    background-color: green;
+    background-color: white;
 }
 
 /* !~~~~~~~ MAIN ~~~~~~~! */
@@ -162,6 +180,8 @@ table {
 
     display: grid;
     grid-template-columns: 5fr 2fr;
+
+    padding: 1em; 
 }
 
 .main .projects {
@@ -175,15 +195,51 @@ table {
 
 .project {
     background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
 }
 
-.project .title {
+.title {
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
     gap: 2em;
+}
+
+.announcements {
+    display: grid;
+    align-content: start;
+}
+
+.announcements .grid {
+    border-radius: 1em;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.announcement {
+    padding: 2em;
+}
+
+.trending .grid {
+    background-color: white;
+    border-radius: 1em;
+
+    display: grid;
+    padding: 2em; 
+}
+
+.trending .item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.trending .item .profile-small {
+    grid-row: 1 / -3;
 }
