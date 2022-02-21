@@ -49,7 +49,14 @@ table {
 
 /* ~~~~~~------~~~~~~~~~ end css reset ~~~~~~~~_---------``~~~~~~~~`` */
 
-
+:root {
+    --palette-main1: #7B8CDE;
+    --palette-main2: #9999C3;
+    --palette-secondary1: #BB999C;
+    --palette-secondary2: #E88D67;
+    --palette-secondary3: #C0E6DE;
+    --palette-offwhite1: #F5F3F6;
+}
 
 
 .app {
@@ -61,7 +68,7 @@ table {
 
 /* !~~~~~~~ SIDEBAR ~~~~~~~! */
 .sidebar {
-    background-color: #afeeee;
+    background-color: var(--palette-main1);
 }
 
 .logo-image {
@@ -141,6 +148,6 @@ table {
 /* !~~~~~~~ MAIN ~~~~~~~! */
 
 .main {
-    background-color: aquamarine;
+    background-color: var(--palette-offwhite1);
     grid-column: 2 / -1;
 }
