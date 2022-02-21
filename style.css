@@ -150,4 +150,11 @@ table {
 .main {
     background-color: var(--palette-offwhite1);
     grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.main .projects {
+    grid-row: 1 / -3;    
 }
