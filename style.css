@@ -47,7 +47,16 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
 /* ~~~~~~------~~~~~~~~~ end css reset ~~~~~~~~_---------``~~~~~~~~`` */
+
+
+
+
+
 
 :root {
     --palette-main1: #7B8CDE;
@@ -141,7 +150,7 @@ table {
     background-color: purple;
 }
 
-.buttons {
+.header .buttons {
     background-color: green;
 }
 
@@ -157,4 +166,24 @@ table {
 
 .main .projects {
     grid-row: 1 / -3;    
+}
+
+.section-label {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.project {
+    background-color: white;
+}
+
+.project .title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 2em;
 }
