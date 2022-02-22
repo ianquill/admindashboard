@@ -53,7 +53,7 @@ table {
 
 /* ~~~~~~------~~~~~~~~~ end css reset ~~~~~~~~_---------``~~~~~~~~`` */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,100;1,900&display=swap');
 
 
 
@@ -65,6 +65,8 @@ table {
     --palette-secondary2: #E88D67;
     --palette-secondary3: #C0E6DE;
     --palette-offwhite1: #F5F3F6;
+    
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -147,6 +149,12 @@ table {
     display: flex;
 }
 
+.search-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 8em;
+}
+
 .search-icon {
     height: 2em;
     width: 2em;
@@ -162,6 +170,16 @@ table {
 .profile-small {
     height: 3em;
     width: 3em;
+}
+
+.profile-medium {
+    height: 4em;
+    width: 4em;
+}
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .userinfo {
