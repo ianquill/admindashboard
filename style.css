@@ -105,6 +105,8 @@ table {
 .navigation {
     display: grid;
     align-content: start;
+    padding: 2em;
+    row-gap: 2em;
 }
 
 .sidebar-item {
@@ -116,13 +118,19 @@ table {
 }
 
 .sidebar-img {
-    background-color: blue;
     height: 2em;
     width: 2em;
+    filter: invert();
 }
 
 .sidebar-text {
     justify-self: start;
+    color: var(--palette-offwhite1);
+    font-weight: bold; 
+}
+
+#communities {
+    
 }
 
 /* !~~~~~~~ HEADER ~~~~~~~~! */
